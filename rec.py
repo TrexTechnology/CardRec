@@ -35,13 +35,33 @@ def edgeDetection(img):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     blur = cv2.GaussianBlur(gray, (5, 5), 0)
     edged = cv2.Canny(blur, 75, 200)
-    show('image', edged)
+
+    # *************  轮廓检测 ****************
+    # 轮廓检测
+    contours, hierarchy = cv2.findContours(
+        edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
+    cnts = sorted(contours, key=cv2.contourArea, reverse=True)[:5]
+
+    # 遍历轮廓
+    for c in cnts:
+        # 计算轮廓近似
+        peri = cv2.arcLength(c, True)
+        # c表示输入的点集，epsilon表示从原始轮廓到近似轮廓的最大距离，它是一个准确度参数
+        approx = cv2.approxPolyDP(c, 0.02*peri, True)
+
+        # 4个点的时候就拿出来
+        if len(approx) == 4:
+            screenCnt = approx
+            break
+
+    # res = cv2.drawContours(image, [screenCnt], -1, (0, 255, 0), 2)
+    res = cv2.drawContours(image, cnts[0], -1, (0, 255, 0), 2)
+    # show(orig)
+    show('image', res)
 
 
 def init():
-    print("HIHI")
     image = cv2.imread(args["image"])
-    # show('image', image)
     edgeDetection(image)
 
 
