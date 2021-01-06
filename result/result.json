@@ -1,0 +1,23 @@
+[
+{
+ "frame_id":1, 
+ "filename":"./test/test07.jpg", 
+ "objects": [ 
+  {"class_id":14, "name":"back_wheel", "relative_coordinates":{"center_x":0.813064, "center_y":0.877205, "width":0.135746, "height":0.039546}, "confidence":0.994444}, 
+  {"class_id":1, "name":"class", "relative_coordinates":{"center_x":0.545700, "center_y":0.436131, "width":0.283397, "height":0.074067}, "confidence":0.998802}, 
+  {"class_id":2, "name":"cc", "relative_coordinates":{"center_x":0.829273, "center_y":0.437168, "width":0.156015, "height":0.052193}, "confidence":0.991945}, 
+  {"class_id":3, "name":"brand", "relative_coordinates":{"center_x":0.106507, "center_y":0.515947, "width":0.089723, "height":0.043933}, "confidence":0.998745}, 
+  {"class_id":4, "name":"model", "relative_coordinates":{"center_x":0.544467, "center_y":0.529550, "width":0.310687, "height":0.057897}, "confidence":0.997395}, 
+  {"class_id":5, "name":"usage", "relative_coordinates":{"center_x":0.820769, "center_y":0.551057, "width":0.131644, "height":0.096673}, "confidence":0.999299}, 
+  {"class_id":6, "name":"engine_number", "relative_coordinates":{"center_x":0.143328, "center_y":0.652967, "width":0.159247, "height":0.043635}, "confidence":0.996232}, 
+  {"class_id":7, "name":"vin", "relative_coordinates":{"center_x":0.540254, "center_y":0.657292, "width":0.270770, "height":0.047947}, "confidence":0.986436}, 
+  {"class_id":8, "name":"registration_day", "relative_coordinates":{"center_x":0.830403, "center_y":0.679277, "width":0.169755, "height":0.048777}, "confidence":0.993521}, 
+  {"class_id":0, "name":"id", "relative_coordinates":{"center_x":0.168081, "center_y":0.433073, "width":0.207122, "height":0.070417}, "confidence":0.999064}, 
+  {"class_id":9, "name":"from", "relative_coordinates":{"center_x":0.166533, "center_y":0.778059, "width":0.197474, "height":0.080559}, "confidence":0.941631}, 
+  {"class_id":10, "name":"seat", "relative_coordinates":{"center_x":0.643450, "center_y":0.777824, "width":0.034115, "height":0.051282}, "confidence":0.994305}, 
+  {"class_id":11, "name":"kg", "relative_coordinates":{"center_x":0.806003, "center_y":0.781970, "width":0.119899, "height":0.055969}, "confidence":0.999379}, 
+  {"class_id":12, "name":"color", "relative_coordinates":{"center_x":0.138571, "center_y":0.876298, "width":0.133832, "height":0.080266}, "confidence":0.986553}, 
+  {"class_id":13, "name":"front_wheel", "relative_coordinates":{"center_x":0.471726, "center_y":0.875464, "width":0.139503, "height":0.043488}, "confidence":0.995654}
+ ] 
+}
+]
