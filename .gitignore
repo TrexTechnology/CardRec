@@ -132,3 +132,4 @@ dmypy.json
 test
 darknet
 predictions.jpg
+bad.list

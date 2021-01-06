@@ -1,1 +1,3 @@
 # CardRec
+
+## How to use
