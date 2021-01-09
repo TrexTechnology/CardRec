@@ -39,7 +39,9 @@ def init():
         for item in result_list:
             cropped_image = Utils.Utils.cropImage(
                 img, item['relative_coordinates'][0], item['relative_coordinates'][1], item['relative_coordinates'][2], item['relative_coordinates'][3])
-            cropped_image.save("./img" + str(i) + ".jpg")
+            text = pytesseract.image_to_string(cropped_image)
+            print(text)
+            # cropped_image.save("./img" + str(i) + ".jpg")
             i = i + 1
             pass
     else:
@@ -48,4 +50,3 @@ def init():
 
 if __name__ == "__main__":
     init()
-    # print("Hi")
