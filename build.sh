@@ -9,15 +9,17 @@ FILE=darknet
 if [ -d "$FILE" ]; then
     echo "$FILE directory exists. Skip this step."
 else
-    git clone https://github.com/AlexeyAB/darknet.git
+    wget https://codeload.github.com/AlexeyAB/darknet/zip/master
     if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+        unzip darknet-master.zip
         cd darknet
         ./build.sh
     elif [[ "$OSTYPE" == "darwin"* ]]; then
+        unzip darknet-master.zip
         cd darknet
         ./build.sh
     elif [[ "$OSTYPE" == "msys" ]]; then
-        git clone https://github.com/microsoft/vcpkg
+        git clone https://github.com/microsoft/vcpkg/master
         cd vcpkg
         $env:VCPKG_ROOT=$PWD
         .\bootstrap-vcpkg.bat
