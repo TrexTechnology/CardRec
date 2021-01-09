@@ -1,4 +1,8 @@
 from PIL import Image
+import numpy as np
+import pytesseract
+import cv2 as cv
+from matplotlib import pyplot as plot
 
 
 class Utils:
@@ -31,3 +35,15 @@ class Utils:
     def cropImage(image, x1, y1, x2, y2):
         cropped_image = image.crop((x1, y1, x2, y2))
         return cropped_image
+    pass
+
+    @staticmethod
+    def integrateOCRResult(image, result_list):
+        for item in result_list:
+            cropped_image = Utils.cropImage(
+                image, item['relative_coordinates'][0], item['relative_coordinates'][1], item['relative_coordinates'][2], item['relative_coordinates'][3])
+            item['text'] = pytesseract.image_to_string(
+                cropped_image, lang='chi_tra+por')
+            # print(item['text'])
+        return result_list
+    pass
