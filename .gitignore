@@ -134,3 +134,4 @@ darknet
 predictions.jpg
 bad.list
 vcpkg
+result/*
