@@ -12,7 +12,7 @@ class Utils:
         x2 = (origin_width * center_x) + (origin_width * width) / 2
         y1 = (origin_height * center_y) - (origin_width * height) / 2
         y2 = (origin_height * center_y) + (origin_width * height) / 2
-        return x1, y1, x2, y2
+        return [x1, y1, x2, y2]
     pass
 
     @staticmethod
@@ -38,11 +38,18 @@ class Utils:
     pass
 
     @staticmethod
+    def cleanTheNoiceOfText(text):
+        text = text.replace('\n', ' ').replace('\r\n', ' ').replace('\x0c', '')
+        return text
+    pass
+
+    @staticmethod
     def integrateOCRResult(image, result_list):
         for item in result_list:
             cropped_image = Utils.cropImage(
                 image, item['relative_coordinates'][0], item['relative_coordinates'][1], item['relative_coordinates'][2], item['relative_coordinates'][3])
             item['text'] = pytesseract.image_to_string(
                 cropped_image, lang='chi_tra+por')
+            item['text'] = Utils.cleanTheNoiceOfText(item['text'])
         return result_list
     pass
