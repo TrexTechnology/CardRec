@@ -44,6 +44,5 @@ class Utils:
                 image, item['relative_coordinates'][0], item['relative_coordinates'][1], item['relative_coordinates'][2], item['relative_coordinates'][3])
             item['text'] = pytesseract.image_to_string(
                 cropped_image, lang='chi_tra+por')
-            # print(item['text'])
         return result_list
     pass
