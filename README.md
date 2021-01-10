@@ -1,6 +1,11 @@
 # CardRec
 
 ## How to install
+First of all, run the config.sh file.
+```bash
+sh config.sh
+```
+
 ### How to compile on Linux/macOS (using CMake)
 ```bash
 cd darknet
