@@ -5,6 +5,8 @@ First of all, run the config.sh file.
 ```bash
 sh config.sh
 ```
+After that, need to compile the darknet on your environment. The following section will demonstrate that how to compile the darknet in 
+different environment.
 
 ### How to compile on Linux/macOS (using CMake)
 ```bash
