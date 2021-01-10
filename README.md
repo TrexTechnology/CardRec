@@ -45,7 +45,7 @@ It will return the json format data, such as:
       693.8936319999999
     ],
     "result_text": "",
-    "text": "120/70-12\n\x0c"
+    "text": "120/70-12 "
   },
   {
     "class_id": 3,
@@ -57,7 +57,7 @@ It will return the json format data, such as:
       418.865408
     ],
     "result_text": "",
-    "text": "P.G.O.\n\x0c"
+    "text": "P.G.O. "
   },
   {
     "class_id": 0,
@@ -69,7 +69,7 @@ It will return the json format data, such as:
       368.731648
     ],
     "result_text": "",
-    "text": "MR-53-21\n\x0c"
+    "text": "MR-XX-XX "
   },
   {
     "class_id": 4,
@@ -81,7 +81,7 @@ It will return the json format data, such as:
       436.28825599999993
     ],
     "result_text": "",
-    "text": "JR-125CIAX (ALPHA MAX)\nAT\n\x0c"
+    "text": "JR-125CIAX (ALPHA MAX) AT "
   },
   {
     "class_id": 6,
@@ -93,7 +93,7 @@ It will return the json format data, such as:
       523.91552
     ],
     "result_text": "",
-    "text": "J2E6F00862\n\x0c"
+    "text": "J2E6F00862 "
   },
   {
     "class_id": 7,
@@ -105,7 +105,7 @@ It will return the json format data, such as:
       529.42208
     ],
     "result_text": "",
-    "text": "RFVJRE6J2J1000861\n\x0c"
+    "text": "RFVJRE6J2J1000861 "
   },
   {
     "class_id": 8,
@@ -117,7 +117,7 @@ It will return the json format data, such as:
       546.6741760000001
     ],
     "result_text": "",
-    "text": "2018/03/23\n\x0c"
+    "text": "2018/03/23 "
   },
   {
     "class_id": 1,
@@ -129,7 +129,7 @@ It will return the json format data, such as:
       372.88448
     ],
     "result_text": "",
-    "text": "重型摩托車(0\n\x0c"
+    "text": "重型摩托車(0 "
   },
   {
     "class_id": 9,
@@ -141,7 +141,7 @@ It will return the json format data, such as:
       638.7440640000001
     ],
     "result_text": "",
-    "text": "中國臺灣\nTAIWAN, CHINA\n\x0c"
+    "text": "中國臺灣 TAIWAN, CHINA "
   },
   {
     "class_id": 2,
@@ -153,7 +153,7 @@ It will return the json format data, such as:
       362.55897600000003
     ],
     "result_text": "",
-    "text": "124.8 c.c\n\x0c"
+    "text": "124.8 c.c "
   },
   {
     "class_id": 10,
@@ -165,7 +165,7 @@ It will return the json format data, such as:
       623.64928
     ],
     "result_text": "",
-    "text": "\x0c"
+    "text": ""
   },
   {
     "class_id": 11,
@@ -177,7 +177,7 @@ It will return the json format data, such as:
       629.2090880000001
     ],
     "result_text": "",
-    "text": "282 kgs\n\x0c"
+    "text": "282 kgs "
   },
   {
     "class_id": 12,
@@ -189,7 +189,7 @@ It will return the json format data, such as:
       714.214656
     ],
     "result_text": "",
-    "text": "\x0c"
+    "text": ""
   },
   {
     "class_id": 5,
@@ -201,7 +201,7 @@ It will return the json format data, such as:
       472.72140800000005
     ],
     "result_text": "",
-    "text": "私人\nParticular\n\x0c"
+    "text": "私人 Particular "
   },
   {
     "class_id": 13,
@@ -213,7 +213,7 @@ It will return the json format data, such as:
       694.727936
     ],
     "result_text": "",
-    "text": "110/70-12\n\x0c"
+    "text": "110/70-12 "
   }
 ]
 ```
